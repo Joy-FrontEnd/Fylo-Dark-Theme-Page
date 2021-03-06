@@ -39,6 +39,17 @@ h3 {
   margin: 30px;
 }
 
+.get-started {
+  max-width: 35%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  line-height: 1.5;
+}
+
+.get-started img {
+  max-width: 80%;
+}
 /*Hero Setion ends here*/
 
 /*Main Section*/
@@ -66,19 +77,19 @@ main {
 }
 
 button {
-  padding: 12px;
-  width: 40%;
+  padding: 10px;
+  width: 35%;
   border: none;
   border-radius: 50px;
   color: white;
   background: hsl(190, 62%, 58%);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .stay-productive {
   display: flex;
-  margin: 50px auto;
-  max-width: 80%;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .item1 {
@@ -97,12 +108,13 @@ a {
   color: #fff;
   display: flex;
   background: hsl(218, 28%, 13%);
+  padding: 20px;
   margin: 0 auto;
 }
 
 .feedback {
-  width: 30%;
-  padding: 40px;
+  width: 50%;
+  padding: 20px;
   margin: 30px;
   line-height: 1.75;
   background: hsl(216, 53%, 9%);
@@ -113,25 +125,34 @@ a {
   border-radius: 50%;
 }
 
-.get-started {
-  max-width: 35%;
-  text-align: center;
-  margin: 0 auto;
-  padding-bottom: 30px;
-  line-height: 1.5;
+section {
+  background: hsl(218, 28%, 13%);
 }
 
 /*Testimonial Section ends here*/
 
 /*Access Section*/
-.get-started img {
-  max-width: 100%;
-}
 
 .access {
-  background: hsl(218, 28%, 13%);
+  background: hsl(217, 28%, 15%);
   color: #fff;
-  width: 70%;
+  max-width: 55%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  top: 50px;
+}
+
+.access input {
+  padding: 12px;
+  margin: 20px;
+  width: 50%;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-weight: 400;
 }
 
 /*Access Section ends here*/
@@ -140,15 +161,21 @@ a {
 
 .footer {
   display: flex;
-  max-width: 100%;
   background: hsl(216, 53%, 9%);
   color: white;
   margin-top: 0;
+  padding-top: 40px;
 }
 
 .contact-info {
-  width: 60%;
-  padding: 60px;
+  width: 80%;
+  padding: 20px;
+}
+
+.contact-info p {
+  display: inline-flex;
+  width: 80%;
+  padding: 10px;
 }
 
 .contact-info ul li {
@@ -162,11 +189,322 @@ a {
 }
 
 i {
-  font-size: 25px;
-  border: 1px solid black;
+  font-size: 20px;
+  border: 1px solid white;
   border-radius: 50%;
   padding: 10px;
   margin: 10px;
 }
 
 /*Footer Section ends here*/
+
+/*Media Queries*/
+
+@media (max-width: 600px) {
+  .nav {
+    max-width: 80%;
+    margin: 0;
+    display: inline;
+    margin: 10px;
+    font-size: 12px;
+  }
+
+  .nav img {
+    margin-top: 20px;
+    position: relative;
+    width: 80px;
+    height: 40px;
+  }
+
+  .get-started {
+    max-width: 100%;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.5;
+  }
+
+  .get-started img {
+    max-width: 50%;
+  }
+
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services {
+    text-align: center;
+    line-height: 1.5;
+    max-width: 100%;
+    margin: 20px auto;
+  }
+
+  .services img {
+    width: 60px;
+  }
+
+  button {
+    width: 80%;
+  }
+
+  .stay-productive {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item1 {
+    margin: 100px 20px;
+    width: 100%;
+  }
+
+  .testmonials {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .feedback {
+    width: 80%;
+    margin: 30px;
+    line-height: 1.5;
+  }
+
+  .access {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    top: 50px;
+    left: -10px;
+  }
+
+  .access input {
+    width: 80%;
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    padding-top: 40px;
+  }
+
+  .contact-info {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .contact-info p {
+    display: inline-flex;
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav {
+    max-width: 100%;
+    margin: 0;
+    display: inline;
+    margin: 10px;
+    font-size: 12px;
+  }
+
+  .nav img {
+    margin-top: 20px;
+    position: relative;
+  }
+
+  .get-started {
+    max-width: 100%;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.5;
+  }
+
+  .get-started img {
+    max-width: 50%;
+  }
+
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services {
+    text-align: center;
+    line-height: 1.5;
+    max-width: 100%;
+    margin: 20px auto;
+  }
+
+  .services img {
+    width: 60px;
+  }
+
+  button {
+    width: 80%;
+  }
+
+  .stay-productive {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item1 {
+    margin: 100px 20px;
+    width: 100%;
+  }
+
+  .testmonials {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .feedback {
+    width: 80%;
+    margin: 30px;
+    line-height: 1.5;
+  }
+
+  .access {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    top: 50px;
+    left: -10px;
+  }
+
+  .access input {
+    width: 80%;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    padding-top: 40px;
+  }
+
+  .contact-info {
+    width: 60%;
+    padding: 20px;
+  }
+
+  .contact-info p {
+    display: inline-flex;
+    width: 80%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav {
+    max-width: 80%;
+    margin: 0;
+    display: inline;
+    margin: 10px;
+    font-size: 12px;
+  }
+
+  .nav img {
+    margin-top: 20px;
+    position: relative;
+  }
+
+  .get-started {
+    max-width: 100%;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.5;
+  }
+
+  .get-started img {
+    max-width: 50%;
+  }
+
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .services {
+    text-align: center;
+    line-height: 1.5;
+    max-width: 100%;
+    margin: 20px auto;
+  }
+
+  .services img {
+    width: 60px;
+  }
+
+  button {
+    width: 80%;
+  }
+
+  .stay-productive {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item1 {
+    margin: 100px 20px;
+    width: 100%;
+  }
+
+  .testmonials {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .feedback {
+    width: 80%;
+    margin: 30px;
+    line-height: 1.5;
+  }
+
+  .access {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    top: 50px;
+    left: -10px;
+  }
+
+  .access input {
+    width: 80%;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    padding-top: 40px;
+  }
+
+  .contact-info {
+    width: 60%;
+    padding: 20px;
+  }
+
+  .contact-info p {
+    display: inline-flex;
+    width: 80%;
+    padding: 10px;
+  }
+}
