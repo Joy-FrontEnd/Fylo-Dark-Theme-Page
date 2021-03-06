@@ -202,18 +202,14 @@ i {
 
 @media (max-width: 600px) {
   .nav {
-    max-width: 80%;
+    max-width: 100%;
     margin: 0;
     display: inline;
-    margin: 10px;
-    font-size: 12px;
   }
-
-  .nav img {
-    margin-top: 20px;
-    position: relative;
-    width: 80px;
-    height: 40px;
+  .nav ul li {
+    margin: 10px;
+    padding: 10px;
+    font-size: 12px;
   }
 
   .get-started {
@@ -313,10 +309,10 @@ i {
     margin: 10px;
     font-size: 12px;
   }
-
-  .nav img {
-    margin-top: 20px;
-    position: relative;
+  .nav ul li {
+    margin: 10px;
+    padding: 10px;
+    font-size: 12px;
   }
 
   .get-started {
@@ -416,9 +412,10 @@ i {
     font-size: 12px;
   }
 
-  .nav img {
-    margin-top: 20px;
-    position: relative;
+  .nav ul li {
+    margin: 10px;
+    padding: 10px;
+    font-size: 12px;
   }
 
   .get-started {
